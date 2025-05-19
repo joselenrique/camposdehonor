@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Batallas Históricas</title>
+  <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Índice de navegación -->
+  <nav class="navbar">
+    <div class="navbar-container">
+      <a href="Campos de Honor.html" class="logo">
+        <img src="img/logoinicio.png" alt="Logo Campos de Honor">
+      </a>
+      <ul class="nav-list">
+        <li><a href="Campos de Honor.html">Inicio</a></li>
+        <li><a href="portada.html">Biografía</a></li>
+        <li class="dropdown">
+          <a href="batallas.html">Batallas ▾</a>
+          <ul class="dropdown-menu">
+            <li><a href="batallas.html#grunwald">Grunwald</a></li>
+            <li><a href="batallas.html#catalanicos">Campos Cataláunicos</a></li>
+            <li><a href="batallas.html#poitiers">Poitiers</a></li>
+            <li><a href="batallas.html#azincourt">Azincourt</a></li>
+            <li><a href="batallas.html#acre">Caída de Acre</a></li>
+            <li><a href="batallas.html#navas">Navas de Tolosa</a></li>
+            <li><a href="batallas.html#hastings">Hastings</a></li>
+            <li><a href="batallas.html#lechfeld">Lechfeld</a></li>
+            <li><a href="batallas.html#stirling">Puente de Stirling</a></li>
+            <li><a href="batallas.html#aqueloo">Aqueloo</a></li>
+            <li><a href="batallas.html#nicopolis">Nicópolis</a></li>
+            <li><a href="batallas.html#constantinopla">Caída de Constantinopla</a></li>
+          </ul>
+        </li>
+
+        <li><a href="mapa.html">Mapa</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Botón flotante para volver arriba -->
+  <a href="#top" id="ir-arriba" title="Volver arriba" aria-label="Volver arriba">
+    <svg width="24" height="24" fill="white" viewBox="0 0 24 24">
+      <path d="M12 4l-8 8h6v8h4v-8h6z" />
+    </svg>
+  </a>
+
+
+
+  <button onclick="mostrarInfo(this)" aria-expanded="false" class="btn-ver-mas">Ocultar</button>
+
+  <!-- Cabecera -->
+  <header class="encabezado-medieval">
+    <h1>Batallas Históricas de la Edad Media</h1>
+    <p>Tu web para descubrir los hechos e hitos de algunas de las batallas más influyentes de la historia en la época del medievo y la Edad Media
+    </p>
+  </header>
+
+  <!-- Secciones de batallas -->
+  <main>
+
+    <div class="batalla" id="hastings">
+      <h2>Batalla de Hastings (1066)</h2>
+      <img src="img/batallahastingsnromans.jpg" alt="Batalla de Hastings">
+      <button onclick="mostrarInfo(this)">Ver más</button>
+      <div class="mas-info">
+
+        <p>* La Batalla de Hastings, datada el <strong>14 de octubre de 1066</strong>, fue un enfrentamiento decisivo
+          entre el ejército anglosajón,liderado por el rey <strong>Harold II</strong>, y las fuerzas normandas comandadas 
+          por <strong>Guillermo el Conquistador</strong>.
+          El duque Guillermo de Normandía cruzó el Canal de la Mancha decidido a reclamar el trono de Inglaterra,
+          desatando una de las batallas más emblemáticas de la Edad Media.</p>
+
+        <p><strong>⚔️ Ejércitos enfrentados:</strong><br>
+        <ul>
+          <li><strong>Normandos:</strong> Liderados por <strong>Guillermo el Conquistador</strong>, contaban con una fuerza combinada de
+            infantería,
+            arqueros y caballería pesada.</li>
+          <li><strong>Anglosajones:</strong> Bajo el mando del rey <strong>Harold II</strong>, su ejército se componía principalmente de
+            infantería pesada, con los temidos "Huscarles" formando un sólido muro de escudos.</li>
+        </ul>
+        </p>
+
+        <p><strong>🛡️ Táctica decisiva:</strong><br>
+          Guillermo empleó una maniobra de engaño <strong>al fingir una retirada</strong>. Esto desorganizó las filas sajonas, que
+          abandonaron su posición defensiva para perseguir al enemigo. Aprovechando el caos, la caballería normanda
+          contraatacó con fuerza, <strong>desbordando a los anglosajones y asegurando la victoria normanda</strong>.
+        </p>
+
+        <p><strong>📜 Consecuencia histórica:</strong><br>
+          La victoria en Hastings marcó el inicio del <strong>dominio normando en Inglaterra</strong>. Esto transformó profundamente la
+          estructura política, lingüística y cultural del país, <strong>introduciendo el sistema feudal, nuevas leyes y una
+            élite gobernante de origen francés</strong>. El idioma inglés mismo comenzó una evolución significativa, influenciado
+          por el francés normando.
+        </p>
+      </div>
+    </div>
+
+    <div class="batalla" id="catalanicos">
+      <h2>Batalla de los Campos Cataláunicos (451)</h2>
+      <img src="img/camposcatalaonicos.png" alt="Campos Cataláunicos">
+      <button onclick="mostrarInfo(this)">Ver más</button>
+      <div class="mas-info">
+        <p>
+          * La Batalla de los Campos Cataláunicos fue un decisivo enfrentamiento en el año 451 d.C. entre una coalición
+          romano-visigoda, liderada por el general romano <strong>Flavio Aecio</strong> y el rey visigodo
+          <strong>Teodorico I</strong>, contra los hunos
+          comandados por <strong>Atila</strong> y sus aliados ostrogodos y gépidos.
+        </p>
+        <p>
+          <strong>⚔️ Ejércitos:</strong><br>
+        <ul>
+          <li><strong>Coalición:</strong> Imperio romano de Occidente y visigodos.</li>
+          <li><strong>Líderes:</strong> <strong>Flavio Aecio</strong> (Roma) y <strong>Teodorico I</strong> (Visigodos).
+          </li>
+          <li><strong>Oponentes:</strong> Hunos con tribus aliadas como ostrogodos y gépidos, encabezados por
+            <strong>Atila</strong>.
+          </li>
+        </ul>
+        </p>
+        <p>
+          <strong>🛡️ Táctica clave:</strong><br>
+          El ejército de coalición utilizó una <strong> defensa escalonada en líneas múltiples</strong> con unidades de
+          refuerzo móviles. Mientras los romanos contenían el
+          avance huno en el centro, los visigodos cargaron contra el flanco izquierdo enemigo, desestabilizando la
+          ofensiva. Fue una estrategia basada en <strong>coordinación de aliados y contraataque lateral</strong> para
+          quebrar la superioridad numérica enemiga.
+        </p>
+        <p>
+          <strong>📜 Consecuencia histórica:</strong><br>
+          La retirada de Atila marcó el <strong>principio del fin de su amenaza en Europa occidental</strong>. Esta
+          victoria retrasó la
+          caída definitiva del Imperio romano de Occidente, consolidó a los visigodos como fuerza dominante en Hispania
+          y mostró la <strong>efectividad de alianzas entre pueblos antiguos frente a invasores externos</strong>.
+        </p>
+      </div>
+    </div>
+
+    <div class="batalla" id="navas">
+      <h2>Batalla de Las Navas de Tolosa (1212)</h2>
+      <img src="img/batallanavastolosa.jpg" alt="Las Navas de Tolosa" />
+      <button onclick="mostrarInfo(this)">Ver más</button>
+      <div class="mas-info">
+        <p>
+          * La batalla de Las Navas de Tolosa la cual se produjo el 16 de julio del año 1212, fue una de las mayores
+          batallas de la Reconquista. Las tropas cristianas de Castilla, Aragón, Navarra y
+          Portugal se enfrentaron al poderoso ejército almohade liderado por el califa Muhammad al-Nasir.
+        </p>
+        <p>
+          <strong>⚔️ Ejércitos:</strong><br>
+        <ul>
+          <li><strong>Coalición cristiana:</strong> Castilla <strong> (Alfonso VIII) </strong>, Aragón <strong> (Pedro
+              II) </strong>, Navarra <strong> (Sancho VII) </strong> y
+            contingentes portugueses, el ejército cristiano estaba compuesto por tropas de infantería ligera, caballería
+            (caballeros, ballesteros) y arqueros. </li>
+
+          <li><strong>Musulmanes:</strong> Califato almohade comandado por <strong>Muhammad al-Nasir</strong>, contaba
+            en sus filas con
+            infantería pesada, caballería ligera, arqueros y otros contingentes.</li>
+        </ul>
+        </p>
+        <p>
+          <strong>🛡️ Táctica clave:</strong><br>
+          <strong>Usaron la astucia infiltrándose por pasos montañosos</strong> guiados por pastores locales, con ataque
+          sorpresa. El rey Sancho VII rompió la guardia personal del califa conocida como "la cadena".
+          Se trató de una gran <strong>táctica de coordinación
+            múltiple de reinos cristianos y aprovechamiento del terreno</strong>.
+        </p>
+
+        <p>
+          <strong>📜 Consecuencia histórica:</strong><br>
+          Esta victoria marcó el inicio del <strong>declive del poder musulmán en la península ibérica</strong>.
+          Permitió la posterior
+          expansión cristiana hacia el sur y fue un <strong>punto de inflexión definitivo en la Reconquista</strong>.
+        </p>
+      </div>
+    </div>
+
+    <div class="batalla" id="poitiers">
+      <h2>Batalla de Poitiers (732)</h2>
+      <img src="img/batalladepoitiers.jpg" alt="Batalla de Poitiers" />
+      <button onclick="mostrarInfo(this)">Ver más</button>
+      <div class="mas-info">
+        <p>
+          * La Batalla de Poitiers, también conocida como <strong>la Batalla de Tours</strong>, tuvo lugar en el
+          <strong>año 732</strong>. Fue un
+          enfrentamiento decisivo entre las fuerzas del Reino Franco, comandadas por <strong>Carlos Martel</strong>, y
+          el ejército
+          musulmán omeya liderado por <strong>Abd al-Rahman al-Ghafiqi</strong>.
+        </p>
+        <p>
+          <strong>⚔️ Ejércitos:</strong>
+        <ul>
+          <li><strong>Francos:</strong> Dirigidos por <strong>Carlos Martel</strong>, líder de los francos y mayordomo
+            de palacio, su
+            ejército estaba compuesto principalmente por infantería ligera y algunas tropas de caballería.</li>
+          <li><strong>Omeyas:</strong> Liderados por <strong>Abd al-Rahman al-Ghafiqi</strong>, gobernador de
+            al-Ándalus, poseía un contingente en
+            el que predominaba la caballería a la infantería, menos usada por los musulmanes.</li>
+        </ul>
+        </p>
+        <p>
+          <strong>🛡️ Táctica clave:</strong><br>
+          Carlos Martel formó una línea de defensa <strong>compacta y en terreno elevado</strong>, usando infantería
+          pesada. Los ataques
+          de caballería omeya no lograron romper la formación franca. Un ataque sorpresa al campamento enemigo
+          desorganizó a los musulmanes y resultó en la muerte de su líder. Una estrategia basada en una
+          <strong>resistencia defensiva firme y buena posición
+            en el campo de batalla</strong> comparado con la del enemigo.
+        </p>
+        <p>
+          <strong>📜 Consecuencia histórica:</strong><br>
+          Esta victoria <strong>frenó la expansión islámica hacia Europa occidental</strong>. Carlos Martel ganó gran
+          prestigio, lo que
+          sentó las bases para la futura dinastía carolingia y el Imperio de Carlomagno. Fue considerada por muchos
+          cronistas medievales como <strong>un punto de inflexión para la cristiandad europea</strong>.
+        </p>
+      </div>
+    </div>
+
+    <div class="batalla" id="azincourt">
+      <h2>Batalla de Azincourt (1415)</h2>
+      <img src="img/batalla de aguincourt.jpg" alt="Batalla de Agincourt" />
+      <button onclick="mostrarInfo(this)">Ver más</button>
+      <div class="mas-info">
+        <p>
+          * La Batalla de Azincourt fue un enfrentamiento crucial durante <strong>la Guerra de los cien años</strong>,
+          ocurrida el <strong>25 de
+            octubre de 1415</strong>. El ejército inglés, liderado por el rey <strong>Enrique V</strong>, derrotó de
+          forma contundente a una fuerza
+          francesa comandados por varios tenientes, uno de ellos y el más importante <strong>Carlos I de Albret</strong>
+          condestable de Francia, siendo numéricamente superiores en el norte del país.
+        </p>
+        <p>
+          <strong>⚔️ Ejércitos:</strong><br>
+        <ul>
+          <li><strong>Inglaterra:</strong> Rey <strong>Enrique V</strong> junto con su infantería y sus arqueros de
+            largo alcance.</li>
+          <li><strong>Francia:</strong> Comandantes entre los que se encontraban, <strong>Carlos d'Albret</strong>, el
+            mariscal Juan Le
+            Maingre y el jefe de los ballesteros David de Rambures, además de otra gran cantidad de caballeros nobles.
+          </li>
+        </ul>
+        </p>
+        <p>
+          <strong>🛡️ Táctica clave:</strong><br>
+          Los ingleses comenzaron con un uso estratégico de sus arqueros <strong>armados con arcos largos
+            (longbows)</strong>, posicionados detrás de estacas
+          defensivas. El terreno fangoso y estrecho redujo la movilidad de la caballería pesada francesa, haciéndola
+          vulnerable al fuego de los arqueros y al combate cuerpo a cuerpo en condiciones adversas. Otra táctica crucial
+          fue el <strong>buen aprovechamiento del terreno</strong>,
+          con una gran disciplina y superioridad táctica inglesa sobre la caballería francesa.
+        </p>
+        <p>
+          <strong>📜 Consecuencia histórica:</strong><br>
+          La victoria inglesa consolidó la reputación de Enrique V como líder militar, debilitó la moral y estructura de
+          la nobleza francesa, y reforzó las aspiraciones inglesas sobre el trono de Francia. Además, marcó un
+          <strong>cambio en
+            el uso de la infantería frente a la caballería tradicional</strong> en la guerra medieval.
+        </p>
+      </div>
+    </div>
+
+    <div class="batalla" id="acre">
+      <h2>Caída de Acre (1291)</h2>
+      <img src="img/caidadeacre.jpg" alt="Caída de Acre">
+      <button onclick="mostrarInfo(this)">Ver más</button>
+      <div class="mas-info">
+    
+        <p>* El desastre para los cristianos de "La Caída de Acre" tuvo lugar el <strong>28 de mayo de 1291</strong> y marcó el <strong>fin del control cruzado sobre Tierra Santa</strong>. 
+          Fue un asedio decisivo en el que las fuerzas del <strong>sultanato mameluco</strong>, lideradas por <strong>el sultán Al-Ashraf Khalil</strong>, 
+          lograron tomar la ciudad de Acre, el último gran bastión cristiano en Oriente.</p>
+    
+        <p><strong>⚔️ Ejércitos enfrentados:</strong><br>
+        <ul>
+          <li><strong>Mamelucos:</strong> Bajo el mando del sultán <strong>Al-Ashraf Khalil</strong>, desplegaron un poderoso ejército con maquinaria de asedio avanzada y arqueros a caballo.</li>
+          <li><strong>Cruzados:</strong> Defensores provenientes de diversas órdenes militares (Templarios, Hospitalarios) como hombres mas importantes liderando el bando católico se encontraban 
+          <strong>Enrique II de Lusignan</strong> y el gran maestre del temple en ese momento <strong>Guillermo de Beaujeu</strong> entre otros, así como habitantes cristianos europeos de la ciudad.</li>
+        </ul>
+        </p>
+    
+        <p><strong>🛡️ Táctica decisiva:</strong><br>
+          Los mamelucos <strong>asediaron intensamente las murallas</strong> con catapultas y torres de asedio. 
+          A pesar de la resistencia feroz, lograron <strong>abrir brechas en las defensas</strong> y penetrar la ciudad. 
+          La lucha fue brutal, con combates casa por casa, hasta que finalmente los cruzados fueron superados.
+        </p>
+    
+        <p><strong>📜 Consecuencia histórica:</strong><br>
+          La pérdida de Acre significó el <strong>fin de las cruzadas en Tierra Santa</strong>. 
+          Las órdenes militares se retiraron a Chipre y Europa, y el sueño de un reino cristiano en el Levante se desvaneció. 
+          Acre pasó a estar bajo control musulmán, consolidando el dominio mameluco en la región durante los siglos siguientes.
+        </p>
+      </div>
+    </div>
+    
+
+
+    <div class="batalla" id="grunwald">
+      <h2>Batalla de Grunwald (1410)</h2>
+      <img src="img/batallagrunwald.jpg" alt="Batalla de Grunwald" />
+      <button onclick="mostrarInfo(this)">Ver más</button>
+      <div class="mas-info">
+        <h2>Batalla de Grunwald</h2>
+        <p>
+          La Batalla de Grunwald, produciéndose el <strong>15 de julio de 1410</strong>, fue uno de los mayores
+          enfrentamientos militares de la Europa medieval. En ella, la alianza entre el <strong>Reino de
+            Polonia</strong> y el <strong>Gran Ducado de Lituania</strong>, liderada por el rey polaco <strong>Ladislao
+            II Jagellón</strong> y el gran duque lituano <strong>Vitautas</strong>, derrotó al poderosísimo ejército del
+          vigésimo sexto Gran maestre de la Orden Teutónica <strong>Ulrich von Jungingen</strong>.
+        </p>
+
+        <h3>⚔️ Ejércitos:</h3>
+        <ul>
+          <li><strong>Alianza:</strong> Reino de Polonia y Gran Ducado de Lituania.</li>
+          <li><strong>Líderes:</strong> Ladislao II Jagellón (Polonia) y Vitautas (Lituania).</li>
+          <li><strong>Oponentes:</strong> Orden Teutónica bajo el Gran Maestre Ulrich von Jungingen.</li>
+        </ul>
+
+        <h3>🛡️ Táctica clave:</h3>
+        <p>
+          La batalla se caracterizó por una <strong>inteligente coordinación de fuerzas múltiples</strong>. La retirada
+          táctica inicial de la caballería lituana desorganizó a los caballeros teutónicos, quienes luego fueron
+          flanqueados por fuerzas polacas. La superioridad numérica y la combinación de estilos de combate resultaron
+          decisivas. Se hizo efectivo el uso de <strong>retirada simulada, flanqueo</strong> y <strong>desgaste
+            progresivo</strong> del enemigo en campo abierto.
+        </p>
+
+        <h3>📜 Consecuencia histórica:</h3>
+        <p>
+          La derrota de la Orden Teutónica supuso el <strong>declive de su poder político y militar</strong> en Europa
+          Central y Oriental. Fortaleció a la <strong>alianza polaco-lituana</strong> como potencia regional y abrió
+          paso al surgimiento de nuevas estructuras estatales en Europa del Este.
+        </p>
+      </div>
+    </div>
+
+    <div class="batalla" id="lechfeld">
+      <h2>Batalla de Lechfeld (955)</h2>
+      <img src="img/batallalechfeld.jpg" alt="Batalla de Lechfeld">
+      <button onclick="mostrarInfo(this)">Ver más</button>
+      <div class="mas-info">
+        <p>
+          * La Batalla de Lechfeld, fechada el <strong>10 de agosto del año 955</strong>, fue un enfrentamiento crucial
+          entre el ejército germánico comandado por el Rey <strong>Otón I</strong> y las incursiones húngaras del jefe
+          tribal <strong>Bulcsú</strong> que asolaban Europa central desde hacía décadas. Cerca de la ciudad de
+          Augsburgo, Otón logró reunir fuerzas de distintos ducados germanos para detener una invasión húngara que
+          amenazaba la estabilidad del reino.
+        </p>
+        <h3>⚔️ Ejércitos enfrentados:</h3>
+        <ul>
+          <li><strong>Germánicos:</strong> Bajo el liderazgo de <em>Otón I el Grande</em>, el ejército estaba formado
+            por contingentes de Sajonia, Baviera, Franconia y Suabia. Su fuerza principal residía en la
+            <strong>caballería pesada</strong>, entrenada para el combate directo y disciplinado.
+          </li>
+          <li><strong>Húngaros (Magiares):</strong> Un ejército móvil y ágil, liderado por el húngaro Bulcsú cuyos
+            soldados eran <strong>jinetes arqueros nómadas</strong>, expertos en emboscadas y ataques relámpago. Su
+            líder y lugartenientes confiaban en tácticas de desgaste y engaño para derrotar a sus enemigos.</li>
+        </ul>
+
+        <h3>🛡️ Táctica clave:</h3>
+        <p>
+          Otón I evitó caer en la trampa habitual de los magiares: la <strong>retirada fingida</strong>. Mantuvo la
+          cohesión de sus tropas y los enfrentó con disciplina. Cuando los húngaros comenzaron a saquear el campamento
+          imperial, Otón lanzó un <strong>ataque envolvente bien coordinado</strong>, aprovechando el momento de
+          desorganización del enemigo. La superioridad de la caballería pesada germánica resultó decisiva, logrando una
+          victoria aplastante.
+        </p>
+
+        <h3>📜 Consecuencia histórica:</h3>
+        <p>
+          La victoria en Lechfeld puso <strong>fin a las incursiones húngaras</strong> en Europa occidental. Esta
+          batalla consolidó el poder de Otón I, quien más tarde sería coronado como <strong><em>Emperador del Sacro
+              Imperio Romano Germánico</em> en 962</strong>. Además, obligó a los magiares a abandonar su estilo de vida
+          nómada, permitiendo la <strong>fundación del Reino de Hungría</strong> y su posterior cristianización.
+        </p>
+      </div>
+    </div>
+
+    <div class="batalla" id="stirling">
+      <h2>Batalla del Puente de Stirling (1066)</h2>
+      <img src="img/batallapuentestirling.jpg" alt="Batalla de Stirling">
+      <button onclick="mostrarInfo(this)">Ver más</button>
+      <div class="mas-info">
+        <p>
+          * La Batalla del Puente de Stirling, sucedió el <strong>11 de septiembre de 1297</strong>, fue un
+          enfrentamiento crucial entre las fuerzas escocesas rebeldes, lideradas por <strong>William Wallace</strong> y
+          <strong>Andrew de Moray</strong>, en el lado opuesto aguardaba el ejército inglés comandado por <strong>John
+            de Warenne</strong>, conde de Surrey y <strong>Hugh de Cressingham</strong> tesorero inglés de la
+          administración escocesa y a su vez asesor del conde. Este combate se convirtió en uno de los primeros grandes
+          triunfos escoceses durante las Guerras de Independencia de Escocia.
+        </p>
+
+        <h3>⚔️ Ejércitos enfrentados:</h3>
+        <ul>
+          <li><strong>Ingleses:</strong> Bajo el mando de John de Warenne y Hugh de Cressingham, contaban con una fuerza
+            numéricamente superior, formada por caballería pesada e infantería bien equipada.</li>
+          <li><strong>Escoceses:</strong> Liderados por Wallace y Moray, los escoceses disponían de un ejército más
+            reducido, compuesto en su mayoría por infantería ligera, campesinos y lanceros con gran conocimiento del
+            terreno.</li>
+        </ul>
+
+        <h3>🛡️ Táctica decisiva:</h3>
+        <p>
+          Los ingleses intentaron cruzar el estrecho puente de Stirling sobre el río Forth. Wallace y Moray esperaron
+          pacientemente hasta que solo una parte del ejército enemigo lo hubiera cruzado. En ese momento, lanzaron un
+          ataque fulminante sobre los soldados ingleses atrapados entre el puente y el río. El puente fue destruido,
+          impidiendo refuerzos y dejando a muchos ingleses sin ruta de escape. El resultado fue una <strong>derrota
+            aplastante</strong> para los invasores.
+        </p>
+
+        <h3>📜 Consecuencia histórica:</h3>
+        <p>
+          La victoria en Stirling impulsó el liderazgo de William Wallace, quien fue nombrado <strong>Guardián de
+            Escocia</strong>. La batalla demostró que una fuerza motivada y estratégicamente inteligente podía derrotar
+          a un enemigo más grande y mejor armado. Este triunfo inspiró la resistencia escocesa y consolidó el mito
+          heroico de Wallace como símbolo de la lucha por la independencia de Escocia.
+        </p>
+      </div>
+    </div>
+
+    <div class="batalla" id="aqueloo">
+      <h2>Batalla de Aqueloo (917)</h2>
+      <img src="img/batalladeaqueloo.jpg" alt="Batalla de Aqueloo" />
+      <button onclick="mostrarInfo(this)">Ver más</button>
+      <div class="mas-info">
+        <p>
+          * La Batalla de Aqueloo, cuya fecha se remonta al <strong>20 de agosto del año 917</strong>, fue uno de los
+          mayores enfrentamientos entre el <strong>Primer Imperio Búlgaro</strong> y el <strong>Imperio
+            Bizantino</strong>. Tuvo lugar cerca del río Aqueloo (situado sobre la costa del Mar Negro, cerca de la
+          fortaleza búlgara de Tuthom, que es actualmente la ciudad de Pomorie) y fue una victoria decisiva para los
+          búlgaros, bajo el mando del zar <strong>Simeón I "el Grande"</strong>, consolidando su hegemonía en los
+          Balcanes. Según las fuentes, fue la batalla más grande y sangrienta de la época medieval conocida como la
+          <strong>"Batalla del Siglo</strong>.
+        </p>
+
+        <h3>⚔️ Ejércitos:</h3>
+        <ul>
+          <li><strong>Búlgaros:</strong> Dirigidos por el zar <strong>Simeón I</strong>, con tropas pesadas y competente
+            caballería, siendo mucho más inferiores en número que sus oponentes</li>
+          <li><strong>Bizantinos:</strong> Liderados por el doméstico "Escolae" <strong>León Focas</strong>, compuestos
+            por infantería regular, caballería y unidades élite de Constantinopla.</li>
+        </ul>
+
+        <h3>🛡️ Táctica clave:</h3>
+        <p>
+          Simeón I usó una <strong>estrategia envolvente</strong>, atrayendo al ejército bizantino a una posición
+          expuesta cerca del río. Tras un aparente retroceso búlgaro, lanzó un <strong>ataque en pinza</strong> con su
+          caballería de reserva desde los flancos. La sorpresa y el terreno difícil contribuyeron a una <strong>derrota
+            catastrófica</strong> para los bizantinos, que perdieron la mayor parte de su ejército.
+        </p>
+
+        <h3>📜 Consecuencia histórica:</h3>
+        <p>
+          La victoria búlgara consolidó el poder de Simeón I como el gobernante más influyente de los Balcanes. El
+          Imperio Bizantino sufrió un fuerte revés político y militar, y el equilibrio regional se inclinó a favor de
+          Bulgaria. Esta batalla marcó el apogeo del <strong>Primer Imperio Búlgaro</strong> y la ambición de Simeón de
+          proclamarse emperador de los romanos.
+        </p>
+      </div>
+    </div>
+
+    <div class="batalla" id="nicopolis">
+      <h2>Batalla de Nicópolis (1396)</h2>
+      <img src="img/batalladenicopolis.jpg" alt="Batalla de Nicópolis" />
+      <button onclick="mostrarInfo(this)">Ver más</button>
+      <div class="mas-info">
+        <p>
+          * La Batalla de Nicópolis, librada el <strong>25 de septiembre de 1396</strong>, fue uno de los últimos
+          grandes esfuerzos de cruzada en la Edad Media y un intento por frenar el avance del <strong>Imperio
+            Otomano</strong> en Europa. La batalla tuvo lugar cerca de la ciudad de <em>Nicópolis</em>, a orillas del
+          Danubio, en la actual Bulgaria.
+        </p>
+
+        <h3>⚔️ Ejércitos:</h3>
+        <ul>
+          <li><strong>Cristianos:</strong> Una coalición de fuerzas lideradas por <em>Segismundo de Hungría</em>, con la
+            participación de caballeros franceses, borgoñones, alemanes y otros cruzados occidentales de varios
+            territorios aún cristianos.</li>
+          <li><strong>Otomanos:</strong> Bajo el mando del sultán <em>Bayezid I</em> apodado y conocido como “el Rayo”,
+            con apoyo de tropas serbias dirigidas por el Rey <em>Esteban Lazarević</em>.</li>
+        </ul>
+
+        <h3>🛡️ Táctica clave:</h3>
+        <p>
+          El ejército cruzado, confiado en su superioridad caballeresca, atacó prematuramente sin esperar a las fuerzas
+          húngaras. Los otomanos resistieron el embate inicial y luego lanzaron una contraofensiva. La caballería pesada
+          cristiana se vió rodeada y atrapada en un enjambre, por lo que la mayoria fue aniquilada o capturada tras la
+          llegada de las reservas otomanas.
+        </p>
+
+        <h3>📜 Consecuencia histórica:</h3>
+        <p>
+          La derrota fue devastadora para Europa occidental y consolidó el poder osmanlí en los Balcanes. Muchos nobles
+          europeos murieron o fueron tomados prisioneros. La batalla dejó clara la eficacia militar otomana y desalentó
+          futuras cruzadas contra ellos durante décadas.
+        </p>
+      </div>
+    </div>
+
+    <div class="batalla" id="constantinopla">
+      <h2>Caída de Constantinopla (1453)</h2>
+      <img src="img/caidadeconstantinopla.jpg" alt="Caida de Constantinopla" />
+      <button onclick="mostrarInfo(this)">Ver más</button>
+      <div class="mas-info">
+        <p>
+          La Caída de Constantinopla, ocurrió el <strong>29 de mayo de 1453</strong>, marcando el fin del
+          <strong>Imperio Bizantino</strong> y el ascenso al poder en el medievo del <strong>Imperio Otomano</strong>,
+          convirtiéndose en una de las principales potencias del mundo. La ciudad fue sitiada por el sultán otomano
+          <strong>Mehmed II</strong>, quien tras semanas de asedio (concretamente 7 semanas y 5 días), logró tomar la
+          capital bizantina, poniendo fin a más de mil años de historia imperial romana en Oriente.
+        </p>
+
+        <h3>⚔️ Ejércitos:</h3>
+        <ul>
+          <li><strong>Otomanos:</strong> Dirigidos por <strong>Mehmed II</strong>, contaba con un enorme plantel de
+            soldados que incluía jenízaros, infantería regular y poderosa artillería.</li>
+          <li><strong>Bizantinos:</strong> Defendiendo el asedio de la gran ciudad, se encontraba <strong>Constantino XI
+              Paleólogo</strong>, el cual tras esta batalla sería el último emperador de la dinastía romana de
+            Occidente, apoyado por un contingente reducido de caballeros bizantinos y mercenarios genoveses liderados
+            por <strong>Giovanni Giustiniani</strong>.</li>
+        </ul>
+
+        <h3>🛡️ Táctica clave:</h3>
+        <p>
+          El asedio otomano combinó el uso de <strong>un gran número de cañones</strong> para debilitar las murallas con
+          ataques coordinados en múltiples frentes. La <strong>baja de Giustiniani</strong> que marchó herido,
+          desmoralizó a los defensores, y la <strong>ruptura de las defensas</strong> por la Puerta de San Romano las
+          más débil de Constantinopla, permitió la entrada de los otomanos.
+        </p>
+
+        <h3>📜 Consecuencia histórica:</h3>
+        <p>
+          La toma de Constantinopla marcó el <strong>fin de la Edad Media</strong> y la consolidación del
+          <strong>Imperio Otomano</strong> como potencia dominante. La ciudad fue renombrada <strong>Estambul</strong> y
+          se convirtió en un nuevo centro político, cultural y religioso del islam. En Europa, el evento provocó
+          conmoción y una ola migratoria de eruditos hacia Occidente, influyendo en el <strong>Renacimiento</strong>.
+        </p>
+      </div>
+    </div>
+  </main>
+
+  <!-- Pie de página ya existente -->
+  <footer id="creditos">
+    <div class="footer-contenido">
+      <h3>📜 Créditos del Proyecto</h3>
+      <p><strong>Proyecto académico:</strong> Exploración de las batallas más significativas de la Edad Media.</p>
+      <p>Desarrollado por <strong>José Enrique Romero Lérida</strong> para el curso de <em>Diseño Web con temática de Historia Medieval</em> - 2025.</p>
+      <p>Imágenes y datos históricos recopilados con fines educativos e investigación sin ánimo de lucro.</p>
+      <p><strong>Fuentes:</strong> Hisotria Medieval, Enciclopedias, Antepasados.</p>
+      <p><strong>Contacto:</strong> <a href="mailto:joseenriqueromerolerida.cr@gmail.com">joseenriqueromerolerida.cr@gmail.com</a></p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,239 @@
+body {
+    margin: 0;
+    background-image: url('img/claritomapa.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #2f1b0c;
+}
+
+
+/* TÍTULO MAPA */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&display=swap');
+
+.titulo-mapa {
+  background: linear-gradient(to bottom, #f4ecd8, #e8dbc1);
+  font-family: 'MedievalSharp', cursive;
+  color: #3d2b1f;
+  text-align: center;
+  padding: 40px 20px;
+  border-top: 4px solid #b79a70;
+  border-bottom: 4px solid #b79a70;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+  text-shadow: 1px 1px 2px #d2c2a3;
+}
+
+
+.titulo-mapa::after {
+  content: '';
+  position: absolute;
+  bottom: -6px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 3px;
+  background: linear-gradient(to right, #b48a55, #e5d3a4, #b48a55);
+  border-radius: 3px;
+}
+
+.logo {
+  position: absolute;
+  left: 250px;
+  top: 16px;
+}
+
+.logo img {
+  height: 155px;
+}
+
+/* Animación opcional */
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+  
+
+/* === MAPA DE BATALLAS (SECCIÓN INICIAL) === */
+#inicio-batallas {
+    background: url('img/mimapa.jpg') center center / cover no-repeat;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 40px 20px;
+    text-align: center;
+    margin: 20px auto;
+    max-width: 1000px;
+    border-radius: 12px;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  #inicio-batallas::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.55);
+    z-index: 0;
+  }
+  
+  #inicio-batallas h2,
+  .grid-batallas {
+    position: relative;
+    z-index: 1;
+  }
+  
+  #inicio-batallas h2 {
+    color: #ffd700;
+    margin-bottom: 15px;
+    font-size: 26px;
+  }
+  
+  .grid-batallas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+  
+  .card-batalla {
+    background-color: #1e1e1e;
+    border: 2px solid #ffd700;
+    padding: 12px 20px;
+    border-radius: 10px;
+    color: #ffd700;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+  }
+  
+  .card-batalla:hover {
+    background-color: #ffd700;
+    color: #1e1e1e;
+    transform: scale(1.05);
+  }
+
+  /* === MAPA INTERACTIVO ELEGANTE === */
+  .map-container {
+    max-width: 840px;
+    width: 95%;
+    margin: 2rem auto;
+    position: relative;
+    background: url('pergamino.jpg') no-repeat center center;
+    background-size: cover;
+    background-color: #a5a58d;
+    padding: 20px;
+    border: 3px transparent;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+    border-radius: 16px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+
+  .map-container:hover {
+    transform: scale(1.01);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.45);
+  }
+  
+  .map-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+  }
+
+  @media (max-width: 768px) {
+    .map-container {
+      padding: 12px;
+      border-radius: 10px;
+    }
+  
+    .map-container img {
+      border-radius: 8px;
+    }
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  /* Puntos de ubicación en el mapa */
+  
+  .punto {
+    position: absolute;
+    transform: translate(-50%, -100%);
+    background: linear-gradient(135deg, #292520de, #553307);
+    color: #fcfcfc;
+    padding: 4px 8px;
+    font-size: 0.75rem;
+    font-family: 'MedievalSharp', cursive;
+    border-radius: 6px 6px 0 0;
+    white-space: nowrap;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+    text-decoration: none;
+    border: 1px solid rgba(235, 181, 6, 0.15);
+    transition: all 0.3s ease;
+    backdrop-filter: blur(2px);
+    z-index: 10;
+  }
+  
+  .punto:hover {
+    background: #a67c52;
+    color: #fcfcfc;
+    transform: translate(-50%, -50%) scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  .punto::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -6px;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 6px solid #1b140a;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+
+  /* SECCIÓN DE CRÉDITOS */
+
+#creditos {
+  background-color: #1c1c1c;
+  color: #f5f5f5;
+  text-align: center;
+  padding: 2rem 1rem;
+  font-family: 'IM Fell English', serif;
+  border-top: 3px solid #7a6239;
+}
+
+.footer-contenido h3 {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  color: #e0c097;
+}
+
+#creditos a {
+  color: #c2a95f;
+  text-decoration: none;
+}
+
+#creditos a:hover {
+  text-decoration: underline;
+}
+
+html {
+  scroll-behavior: smooth;
+}
