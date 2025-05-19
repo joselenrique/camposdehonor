@@ -1,0 +1,528 @@
+/* === CONFIGURACIÓN GLOBAL === */
+body {
+  font-family: 'MedievalSharp', cursive;
+  margin: 0;
+  padding: 0;
+  background: url('img/fondoweb.png') center center / cover no-repeat fixed;
+  color: #f5f5f5;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+
+
+
+/* === NAVEGACIÓN DESPLEGABLE === */
+.navbar {
+  background-color: #c4b798;
+  font-family: 'MedievalSharp', cursive;
+  padding: 10px 0;
+  font-size: 20px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.navbar-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.logo {
+  position: absolute;
+  left: 120px;
+}
+
+.logo img {
+  height: 140px;
+  margin-top: 15px;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-list li {
+  position: relative;
+}
+
+.nav-list a, .dropdown-toggle {
+  display: block;
+  padding: 12px 20px;
+  text-decoration: none;
+  color: #3d2b1f;
+  font-weight: bold;
+}
+
+.nav-list a:hover, .dropdown-toggle:hover {
+  background-color: #b5a27f;
+}
+
+.nav-list a::after, .dropdown-toggle::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 8px;
+  width: 100%;
+  height: 2px;
+  background-color: #3d2b1f;
+  transform: scaleX(0);
+  transform-origin: bottom left;
+  transition: transform 0.3s ease;
+}
+
+.nav-list a:hover::after, .dropdown-toggle:hover::after {
+  transform: scaleX(1);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+/* Submenú */
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: #d5c4a1;
+  top: 100%;
+  left: 0;
+  min-width: 180px;
+  z-index: 1000;
+  border: 1px solid #3d2b1f;
+  margin: 0;
+  padding: 0;
+  border-radius: 6px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  list-style: none;
+}
+
+.dropdown-menu li a {
+  padding: 10px;
+  color: #3d2b1f;
+  white-space: nowrap;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+
+/* === CONTENIDO PRINCIPAL === */
+main {
+  background: url('img/pergamino-textura.jpg') no-repeat center center;
+  background-size: cover;
+  color: #3e2f1c;
+  padding: 30px;
+  border-radius: 20px;
+  margin: 30px auto;
+  max-width: 1000px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  font-family: 'MedievalSharp', cursive;
+}
+
+/* === SECCIÓN DE BATALLAS === */
+
+.encabezado-medieval {
+  background: linear-gradient(to bottom, #f4ecd8, #e8dbc1);
+  font-family: 'MedievalSharp', cursive;
+  color: #3d2b1f;
+  text-align: center;
+  padding: 40px 20px;
+  border-top: 4px solid #b79a70;
+  border-bottom: 4px solid #b79a70;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+  text-shadow: 1px 1px 2px #d2c2a3;
+}
+
+.encabezado-medieval h1 {
+  font-size: 3rem;
+  margin-bottom: 15px;
+}
+
+.encabezado-medieval p {
+  font-size: 1.3rem;
+  max-width: 800px;
+  margin: 0 auto;
+  color: #4b2e0f;
+}
+
+.batalla {
+  background-color: rgba(66, 38, 6, 0.733);
+  color: #ebcc22;
+  text-shadow: 1px 1px 2px #222;
+  padding: 30px;
+  border-radius: 10px;
+  max-width: 900px;
+  margin: 60px auto;
+  scroll-margin-top: 100px;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.6s ease-out;
+}
+
+.batalla.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.batalla h2 {
+  margin-top: 0;
+  color: #ebcc22;
+  text-shadow: 1px 1px 4px #000;
+}
+
+.batalla img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+.mas-info {
+  display: none;
+  margin-top: 20px;
+  color: #f5f5f5;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+/* === BOTONES === */
+
+button {
+  background: linear-gradient(to bottom, #e5d2a2, #b5925b);
+  color: #1a0d05;
+  border: 1px solid #6b3d1a;
+  padding: 6px 18px;
+  font-family: 'MedievalSharp', cursive;
+  font-size: 0.95rem;
+  letter-spacing: 1.2px;
+  border-radius: 10px;
+  text-shadow: 
+    1px 1px 0 #000, 
+    -1px -1px 0 #000, 
+    1px -1px 0 #000, 
+    -1px 1px 0 #000;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.25), inset 0 0 4px #f8eac9;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  text-transform: uppercase;
+}
+
+button:hover {
+  background: #6b3d1a;
+  color: #f4ede0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+  transform: translateY(-2px) scale(1.03);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+/* === BOTÓN IR ARRIBA === */
+#ir-arriba {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background-color: transparent;
+  padding: 14px;
+  border-radius: 50%;
+  display: none;
+  z-index: 999;
+  animation: flotando 1.8s ease-in-out infinite;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+#ir-arriba svg {
+  width: 24px;
+  height: 24px;
+  display: block;
+}
+
+#ir-arriba:hover {
+  background-color: #47280f;
+  transform: scale(1.1);
+}
+
+@keyframes flotando {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-6px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* === RESPONSIVE DESIGN === */
+@media (max-width: 768px) {
+  nav a {
+    display: block;
+    margin: 8px 0;
+  }
+
+  main,
+  #inicio-batallas {
+    margin: 10px;
+    padding: 15px;
+  }
+
+  .grid-batallas {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .punto {
+    font-size: 10px;
+    padding: 2px 4px;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+/* SECCIÓN DE CRÉDITOS */
+
+#creditos {
+  background-color: #1c1c1c;
+  color: #f5f5f5;
+  text-align: center;
+  padding: 2rem 1rem;
+  font-family: 'IM Fell English', serif;
+  border-top: 3px solid #7a6239;
+}
+
+.footer-contenido h3 {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  color: #e0c097;
+}
+
+#creditos a {
+  color: #c2a95f;
+  text-decoration: none;
+}
+
+#creditos a:hover {
+  text-decoration: underline;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/*  INICIO */
+
+.landing-header {
+  min-height: 91vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: url('img/fondolibro.jpg') no-repeat center center/cover;
+  color: white;
+  text-align: center;
+  object-fit: cover;
+}
+
+.landing-header h1 {
+  font-family: 'MedievalSharp', serif;
+  font-size: 45px;
+  margin-bottom: 0.5rem;
+  margin-right: 50px;
+}
+
+.landing-header p {
+  font-size: 25px;
+  font-family: 'MedievalSharp', serif;
+  color: #5f4713;
+}
+
+.btn-ir {
+  margin-top: 2rem;
+  padding: 1rem 2rem;
+  background-color: #8d7650;
+  color: white;
+  text-decoration: none;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  font-family: 'MedievalSharp', serif;
+  transition: background 0.3s ease;
+}
+
+.btn-ir:hover {
+  background-color: #3f2b0c;
+}
+
+@keyframes fadeInUp {
+  0% { opacity: 0; transform: translateY(40px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+.landing-header h1,
+.landing-header p,
+.btn-ir {
+  animation: fadeInUp 1s ease forwards;
+  opacity: 0;
+}
+
+.landing-header h1 { animation-delay: 0.2s; }
+.landing-header p { animation-delay: 0.4s; }
+.btn-ir { animation-delay: 0.6s; }
+
+.logo-escudo {
+  width: 420px;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto 1rem;
+  filter: drop-shadow(0 8px 14px rgba(0, 0, 0, 0.25));
+  transition: transform 0.4s ease, filter 0.4s ease;
+  animation: fadeInDrop 1.2s ease-out forwards;
+}
+
+
+@keyframes fadeInDrop {
+  0% {
+    opacity: 0;
+    transform: translateY(-30px) scale(0.95);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+/* CONTACTO */
+
+body {
+  font-family: 'Georgia', serif;
+  background-color: #f4f0e6;
+  color: #3b2f2f;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background: linear-gradient(to bottom, #f4ecd8, #e8dbc1);
+  font-family: 'MedievalSharp', cursive;
+  color: #3d2b1f;
+  text-align: center;
+  padding: 40px 20px;
+  border-top: 4px solid #b79a70;
+  border-bottom: 4px solid #b79a70;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+  text-shadow: 1px 1px 2px #d2c2a3;
+}
+
+main {
+  max-width: 800px;
+  margin: 2em auto;
+  padding: 2em;
+  background-color: #fffef8;
+  border: 2px solid #c0a36c;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(96, 76, 36, 0.3);
+  font-size: 1.1em;
+}
+
+h1 {
+  font-family: 'MedievalSharp', cursive;
+  font-size: 2.5em;
+  color: #4b3217;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-top: 1em;
+  font-weight: bold;
+  font-family: 'MedievalSharp', cursive;
+  font-size: 1.1em;
+}
+
+input, textarea {
+  padding: 0.7em;
+  font-family: 'Georgia', serif;
+  border: 1px solid #aa8c55;
+  border-radius: 6px;
+  background-color: #fffaf0;
+}
+
+button {
+  margin-top: 1.5em;
+  padding: 0.8em;
+  background-color: #7a5c3f;
+  color: #fffbe6;
+  font-weight: bold;
+  font-family: 'MedievalSharp', cursive;
+  font-size: 1.1em;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #5e4330;
+}
+
+footer {
+  background-color: #e7dbc3;
+  padding: 2em;
+  text-align: center;
+  font-size: 0.95em;
+  font-family: 'Georgia', serif;
+  border-top: 2px solid #c0a36c;
+}
+
+footer h3 {
+  font-family: 'MedievalSharp', cursive;
+  font-size: 1.5em;
+}
+
+html {
+  scroll-behavior: smooth;
+}
